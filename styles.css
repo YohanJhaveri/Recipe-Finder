@@ -1,0 +1,145 @@
+* { box-sizing: border-box }
+*:focus { outline: none }
+
+html, body, #app {
+    font-family: 'Avenir';
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.w-100 { width: 100% }
+.bold { font-weight: bold }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    background: #eee;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px lightgrey solid;
+}
+
+input {
+    padding: 15px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px lightgrey solid;
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+    height: 50px;
+    background: salmon;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.login {
+    height: 300px;
+    width: 350px;
+}
+
+.login__heading {
+    flex: 1;
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.login__form {
+    flex: 10;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+}
+
+.ingredients {
+    height: auto;
+    width: 350px;
+}
+
+.ingredients__add {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ingredients__add__input {
+    flex: 1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+}
+
+.ingredients__add__button {
+    width: 50px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.ingredients__list {
+    display: flex;
+    align-content: flex-start;
+    margin: 20px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ingredient {
+    display: flex;
+    flex-direction: row;
+    background: #ddd;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px;
+    font-size: 1rem;
+    align-items: center;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.ingredient__delete {
+    background: transparent;
+    border: none;
+    margin-left: 10px;
+}
+
+.ingredient__icon {
+    color: #aaa;
+    margin-left: 2px;
+}
+
+.ingredient__error-bg {
+    border: 1px solid #ff4444;
+}
+
+.ingredient__error-msg {
+    color: #ff4444;
+    font-size: 0.8rem;
+    margin-top: 2px;
+}
+
+.delete-all {
+    text-decoration: underline;
+    color: #aaa;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-align: right;
+    margin-bottom: 10px;
+}
